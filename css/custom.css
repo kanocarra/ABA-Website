@@ -126,6 +126,31 @@ h3.sectionTitle {
 /************************** JUMBOTRON ********************************/
 /********************************************************************/
 
+.overlay {
+	color:#fff;
+	position:absolute;
+	z-index:12;
+	top:50%;
+	left:0;
+	width:100%;
+	text-align:center;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+
+
 .jumbotron {
 	/*background: url() no-repeat center center scroll;*/
 	-webkit-background-size: cover;
