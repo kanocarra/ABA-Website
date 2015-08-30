@@ -1,18 +1,47 @@
+/* Custom CSS Sheet for Auckland Bands */
+
+/* Overall Styling */
 body {
     color: #555555;
     font-family: 'Noto Sans',sans-serif;
 }
-/*
-Custom CSS Sheet for Auckland Bands
-*/
 
 h1, h2, h3, h4, h5, h6 {
 	color: #333333;
     font-family: 'Roboto Condensed',sans-serif;
 }
 
+p {
+	line-height: 1.6;
+	font-size: 16px;
+}
+a:focus {
+	outline: none;
+}
 
+a {
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+	transition: 0.25s;
+}
 
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 2px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+img {
+	vertical-align: middle;
+}
+
+/*********
+NAVIGATION
+**********/
 ul.nav a {
 	color: #d0cece!important;
 }
@@ -29,14 +58,21 @@ ul.dropdown-menu a:hover {
 	color: #000 !important;
 }
 
+/* Styling for main logo/text on nav */
 .navbar-brand {
 	font-size: large;
-	color: white !important;
+	color: #d0cece !important;
 	text-shadow: 1px 1px #333333;
 	font-family: 'Roboto Condensed',sans-serif;
-
 }
 
+.navbar-brand a:hover {
+	color: #ffffff !important;
+}
+
+/**************
+WELCOME SECTION
+**************/
 .main {
 	font-family: 'Roboto Condensed',sans-serif;
 	/*font-variant: small-caps;*/
@@ -44,41 +80,29 @@ ul.dropdown-menu a:hover {
 	color: #234190;
 }
 
+
+.main-section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/*****
+FOOTER
+******/
 footer {
 	padding: 10px 0;
 	background: #234190;
 }
 
-p {
-	line-height: 1.6;
-	font-size: 16px;
-}
-a:focus {
-    outline: none;
+/*White text and links */
+ul.list-inline li, ul.list-inline p, .footer-text {
+	color: #d0cece !important;
 }
 
-a {
-	-webkit-transition: 0.25s;
-	-moz-transition: 0.25s;
-	-o-transition: 0.25s;
-	transition: 0.25s;
+ul.list-inline a {
+	text-decoration: underline;
+	color: #d0cece !important;
 }
 
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	padding: 0;
-}
-
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
-img {
-	vertical-align: middle;
-}
 
 
