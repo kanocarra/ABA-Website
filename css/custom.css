@@ -60,8 +60,8 @@ ul.dropdown-menu a:hover {
 
 /* Styling for main logo/text on nav */
 .navbar-brand {
-	font-size: large;
-	color: #d0cece !important;
+	font-size: x-large;
+	color: #ffffff !important;
 	text-shadow: 1px 1px #333333;
 	font-family: 'Roboto Condensed',sans-serif;
 }
@@ -102,6 +102,13 @@ ul.list-inline li, ul.list-inline p, .footer-text {
 ul.list-inline a {
 	text-decoration: underline;
 	color: #d0cece !important;
+}
+
+#map-canvas {
+	height: 800px;
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 50px;
 }
 
 
