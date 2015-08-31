@@ -104,11 +104,27 @@ ul.list-inline a {
 	color: #d0cece !important;
 }
 
+/*********
+GOOGLE MAP
+**********/
 #map-canvas {
-	height: 800px;
+	height: 100%;
 	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 50px;
+}
+
+.map-col {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 50px;
+	height: 850px;
+	background-color: #dddde0;
+}
+
+.map-side-col {
+	background-color: #dddde0;
+	padding-top: 50px;
+	height: 100%;
+	vertical-align: middle;
 }
 
 
