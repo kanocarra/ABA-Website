@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app = "aucklandBands">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <meta name="description" content="A Bootstrap based app landing page template">
     <meta name="author" content="">
 
-    <title>Auckland Bands Association</title>
+    <title>Auckland Bands Association - Find A Band</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,6 +15,7 @@
     <!-- Custom styles -->
     <link href="css/custom.css" rel="stylesheet">
 
+    <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 
@@ -23,47 +24,12 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script src = "node_modules/angular/angular.js"></script>
+    <script src = "js/app.js"></script>
 </head>
-
 <body style="background-color: #dddde0;">
-<div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #234190; text-align:center;">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">
-                Auckland Bands
-            </a>
-        </div>
-        <li class="collapse navbar-collapse appiNav">
-            <ul class="nav navbar-nav">
-                <!--<li class="dropdown">-->
-                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>-->
-                <!--<ul class="dropdown-menu">-->
-                <!--<li>-->
-                <!--<a href="#">Our Bands</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                <!--<a href="#">Contact Us</a>-->
-                <!--</li>-->
-                <!--</ul>-->
-                <!--</li>-->
-                <!-- TODO: Add links to pages-->
-                <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> News & Events</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-book"></span> Education</a></li>
-                <li><a href="findBand.html"><span class="glyphicon glyphicon-map-marker"></span> Find A Band</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-star"></span> Results</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Regulations & Forms</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-search"></span> Useful Links</a></li>
-            </ul>
-    </div>
-    <!--/.nav-collapse -->
-</div>
-
+<div ng-include ="'partials/header.html'"></div>
 <div class="col-lg-12" style="width:100%; padding-top: 50px;">
     <!--<div class = "overlay"><h1 style= "color:#FFFFFF;">Welcome to Auckland Bands Association</h1><p>Currently under construction, check back soon!</p></div>-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
