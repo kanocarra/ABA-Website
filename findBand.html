@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app = "aucklandBands">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,78 +25,17 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src = "node_modules/angular/angular.js"></script>
+    <script src = "js/app.js"></script>
+
 </head>
 
 <body style="background-color: #dddde0;" onLoad = "initialiseMap()">
-<div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #234190; text-align:center;">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">
-                Auckland Bands
-            </a>
-        </div>
-        <li class="collapse navbar-collapse appiNav">
-            <ul class="nav navbar-nav">
-                <!--<li class="dropdown">-->
-                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>-->
-                <!--<ul class="dropdown-menu">-->
-                <!--<li>-->
-                <!--<a href="#">Our Bands</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                <!--<a href="#">Contact Us</a>-->
-                <!--</li>-->
-                <!--</ul>-->
-                <!--</li>-->
-                <!-- TODO: Add links to pages-->
-                <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> News & Events</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-book"></span> Education</a></li>
-                <li><a href="findBand.html"><span class="glyphicon glyphicon-map-marker"></span> Find A Band</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-star"></span> Results</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Regulations & Forms</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-search"></span> Useful Links</a></li>
-            </ul>
-    </div>
-    <!--/.nav-collapse -->
-</div>
+<div ng-include ="'partials/header.html'"></div>
 <div class = "col-lg-12" style="padding-top: 50px; width: 100%">
     <div id="map-canvas"></div>
 </div>
-
-
-<!--TODO: Proper contact links-->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 text-center">
-                <h3 class = "footer-text">
-                    Auckland Bands Association Inc.
-                </h3>
-                <ul class="list-inline">
-                    <li>
-                        <span class="glyphicon glyphicon-envelope"></span>  <a href="">Email</a>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-earphone"></span>  <a href="">Phone</a>
-                    </li>
-                    <li>
-                        <span class="glyphicon glyphicon-thumbs-up"></span> <a href="">Facebook</a>
-                    </li>
-                    <hr class="small">
-                    <p>Website Created by Emily Melhuish<br>
-                        Copyright &copy; Auckland Bands Association Inc. 2015</p>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-
+<div ng-include = "'partials/footer.html'"></div>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
@@ -107,8 +46,6 @@
 <!-- Google Maps Javascript API -->
 <script src = "js\GoogleMaps.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcm9PRHRPkiQgci7VKFbLyY8OAbxIWrfA&callback=initialiseMap" type="text/javascript"></script>
-
-
 
 </body>
 </html>
