@@ -4,38 +4,85 @@
 // API KEY: AIzaSyD0F_2kiAs1YGgtBjaj7FM1cJYq6d38Gb4
 var map;
 var markers = [];
+
+var bands = [
+    {
+        "name": "Whangarei District Brass",
+        lat: -35.7550607,
+        lng: 174.3124363,
+        link: "https://www.facebook.com/whangareidistrictbrass/info?tab=page_info"
+    },
+    {   "name": "Kumeu Brass",
+        lat: -36.7800327,
+        lng: 174.5537317,
+        link: "http://www.kumeubrass.org.nz/index.php"
+    },
+    {   "name": "Waitakere Auckland Brass",
+        lat: -36.907943,
+        lng: 174.69068,
+        link: "http://www.waitakerebrass.com/"
+    },
+    {   "name": "North Shore Brass",
+        lat: -36.7871699,
+        lng: 174.7602339,
+        ink: "http://www.northshorebrass.org.nz/"},
+    {
+        "name": "North Shore Youth Brass",
+        lat: -36.7883307,
+        lng: 174.7598231,
+        link: "http://www.northshoreyouthbrassband.org/"
+    },
+    {
+        "name": "Takapuna Grammar School Brass",
+        lat: -36.8015774,
+        lng: 174.7903275,
+        link: "http://www.takapuna.school.nz/news/student-achievement/"
+    },
+    {   "name": "Auckland City Brass",
+        lat: -36.907635,
+        lng: 174.757163,
+        link: "http://www.aucklandcitybrass.co.nz/"
+    },
+    //TODO: Add rest of bands in
+    //{"name":"Howick Brass", lat:-36.907635, lng:174.757163, link:"http://www.aucklandcitybrass.co.nz/"},
+    //{"name":"Auckland City Brass", lat:-36.907635, lng:174.757163, link:"http://www.aucklandcitybrass.co.nz/"},
+    //{"name":"Auckland City Brass", lat:-36.907635, lng:174.757163, link:"http://www.aucklandcitybrass.co.nz/"},
+    //{"name":"Auckland City Brass", lat:-36.907635, lng:174.757163, link:"http://www.aucklandcitybrass.co.nz/"},
+];
+
 function initialiseMap() {
     map = new google.maps.Map(document.getElementById('map-canvas'), {
-        //center on Auckland
-        center: {lat: -36.8325841, lng: 174.7982726},
-        zoom: 12
+        //Center on Auckland
+        center: {lat: -36.3325262, lng: 174.6057952},
+        zoom: 9
     });
-    addMarkers();
+    //Delay dropping of markers until map is fully loaded
+    setTimeout(function(){
+        addMarkers();
+    },700);
 }
 
-function drop() {
-    for (var i =0; i < markerArray.length; i++) {
-        setTimeout(function() {
-            addMarker();
-        }, i * 200);
+var currentBand;
+
+function addMarkers() {
+    for(var i=0; i < bands.length; i++) {
+        currentBand = bands[i];
+        markers[i] = new google.maps.Marker({
+            map: map,
+            draggable: false,
+            animation: google.maps.Animation.DROP,
+            position: {lat:currentBand.lat, lng: currentBand.lng}
+        });
+        //TODO: Add info window for markers for band info
+        markers[i].addListener('click', function () {
+            infoWindow.open(map, marker[i]);
+        });
     }
 }
 
-function addMarker() {
-    marker = new google.maps.Marker({
-        map: map,
-        draggable: true,
-        animation: google.maps.Animation.DROP,
-        position: {lat: -36.8325841, lng: 174.7982726}
-    });
-    marker.addListener('click', toggleBounce);
-}
+var infoWindow = new google.maps.InfoWindow({
+    content: '<ul>' + currentBand.name + '</ul>'
+});
 
 
-function toggleBounce() {
-    if (marker.getAnimation() !== null) {
-        marker.setAnimation(null);
-    } else {
-        marker.setAnimation(google.maps.Animation.BOUNCE);
-    }
-}
+
