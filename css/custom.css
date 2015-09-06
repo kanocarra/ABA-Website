@@ -104,6 +104,18 @@ ul.list-inline a {
 	color: #d0cece !important;
 }
 
+.forms-section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+}
+
+.pages {
+	font-family: 'Roboto Condensed',sans-serif;
+	text-align: left;
+	color: #234190;
+}
+
 /*********
 GOOGLE MAP
 **********/
