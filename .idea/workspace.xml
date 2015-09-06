@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0a9db5-1f38-4075-9e40-562eac591ee9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/ABA Band Contest - youth - entry form 2015.doc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/ABA Band Contest - entry form 2015.doc" afterPath="$PROJECT_DIR$/docs/ABA Band Contest - entry form 2015 .doc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/ABA Band Contest - assist player form 2015.doc" afterPath="$PROJECT_DIR$/docs/ABA Band Contest - Youth Entry Form.doc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/ABA Band Contest - entry form 2015 .doc" afterPath="$PROJECT_DIR$/docs/ABA Band Contest - Assist Player Form .doc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/docs/ABA Band Contest - youth - entry form 2015.doc" afterPath="$PROJECT_DIR$/docs/ABA Band Contest - Contest Form.doc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/forms.html" afterPath="$PROJECT_DIR$/forms.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -93,8 +93,8 @@
       <file leaf-file-name="forms.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/forms.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5408163">
-              <caret line="54" column="77" selection-start-line="54" selection-start-column="77" selection-end-line="54" selection-end-column="77" />
+            <state vertical-scroll-proportion="0.5714286">
+              <caret line="52" column="65" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -554,7 +554,7 @@
       <workItem from="1440902426437" duration="18558000" />
       <workItem from="1441101493070" duration="6060000" />
       <workItem from="1441277118668" duration="4747000" />
-      <workItem from="1441537305875" duration="5845000" />
+      <workItem from="1441537305875" duration="6243000" />
     </task>
     <task id="LOCAL-00001" summary="Added documents and images for ABA and server side info">
       <created>1440808343153</created>
@@ -598,11 +598,17 @@
       <option name="project" value="LOCAL" />
       <updated>1441541687405</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Forms changed">
+      <created>1441543346166</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1441543346166</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46103000" />
+    <option name="totallyTimeSpent" value="46501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="66" y="-4" width="1855" height="1085" extended-state="6" />
@@ -655,7 +661,8 @@
     <MESSAGE value="InfoWindow displaying but not for each marker" />
     <MESSAGE value="Forms and Regulations page added" />
     <MESSAGE value="All forms added for download" />
-    <option name="LAST_COMMIT_MESSAGE" value="All forms added for download" />
+    <MESSAGE value="Forms changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forms changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1123,8 +1130,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/forms.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5408163">
-          <caret line="54" column="77" selection-start-line="54" selection-start-column="77" selection-end-line="54" selection-end-column="77" />
+        <state vertical-scroll-proportion="0.5714286">
+          <caret line="52" column="65" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
