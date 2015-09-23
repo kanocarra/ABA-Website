@@ -1,9 +1,8 @@
 /**
  * Created by Emily on 29/08/2015.
  */
-var map;
-var markers = [];
 
+var map;
 var bands = [
     {
         name: "Whangarei District Brass",
@@ -68,23 +67,30 @@ function initialiseMap() {
 var currentBand;
 
 function addMarkers() {
-    for(var i=0; i < bands.length; i++) {
+    var i;
+    var markers = [];
+    var marker;
+
+    for(i=0; i < bands.length; i++) {
         currentBand = bands[i];
-        var marker = new google.maps.Marker({
+        marker = new google.maps.Marker({
             map: map,
             draggable: false,
             animation: google.maps.Animation.DROP,
-            position: {lat:currentBand.lat, lng: currentBand.lng}
-        });
-        markers[i] = marker;
-        var infoWindow = new google.maps.InfoWindow({
-            content: '<p>Hello World!</p>'
+            position: {lat:currentBand.lat, lng: currentBand.lng},
+            title: "Band"
         });
 
-        //TODO: Add info window for markers for band info
-        markers[i].addListener('click', function() {
-            infoWindow.open(map,  markers[i]);
+        var textContent = "Band: " + currentBand.name;
+
+        var infoWindow = new google.maps.InfoWindow({
+            content: textContent
         });
+        //TODO: Add info window for all markers
+        google.maps.event.addListener(marker, 'click', function () {
+            infoWindow.open(map, marker);
+        });
+        markers.push(marker);
     }
 }
 
