@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="20990916-f748-41e0-9e98-8140080c755a" name="Freeparking" url="http://ftp.aucklandbands.com">
+        <fileTransfer host="ftp.aucklandbands.com" port="21" password="dfeddfcbdfd8dfcedfcfdfc4df9bdf9a" username="auckland">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
