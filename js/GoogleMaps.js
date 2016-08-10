@@ -43,6 +43,13 @@ var bands = [
         address: "13 Taharoto Road <br> Takapuna <br> Auckland <br> "
     },
     {
+        "name":"North Shore Brass Academy Band",
+        lat: -36.7883200,
+        lng: 174.7588231,
+        linkhttps:"http://www.facebook.com/North-Shore-Brass-Academy-319603901472462/",
+        address:"13 Taharoto Road <br> Takapuna <br> Auckland <br> "
+    },
+    {
         name: "Takapuna Grammar School Brass",
         lat: -36.8015774,
         lng: 174.7903275,
@@ -85,6 +92,13 @@ var bands = [
         link:"https://www.facebook.com/PapakuraBrass/",
         address:"104 Arimu Road <br> Papakura <br> Auckland <br>"
     },
+    //{
+    //    "name":"Royal Regiment NZ Artillery Band",
+    //    lat:-36.8888645,
+    //    lng:174.8453355,
+    //    link:"https://www.facebook.com/PapakuraBrass/",
+    //    address:" 66F Homestead Drive <br> Panmure <br> Auckland <br>"
+    //},
 ];
 
 function initialiseMap() {
